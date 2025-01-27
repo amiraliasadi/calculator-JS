@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="assets/styles/app.css" />
     <script src="assets/scripts/vendor.js" defer></script>
     <script src="assets/scripts/app.js" defer></script>
-    <!-- important:defer: download js but continue parsing html and execute only after parsing completes -->
-    <!-- async:start loading scripts but continue parsing so it will be executed and parsed then but it is wrong here if we wanna send data to server then we use this
-     <script src="assets/scripts/app.js" async></script> -->
-    <!-- defer and async only works on external scripts -->
   </head>
   <body>
     <header>
@@ -35,8 +31,5 @@
       <h2 id="current-calculation">0</h2>
       <h2>Result: <span id="current-result">0</span></h2>
     </section>
-    <!-- <script src="assets/scripts/vendor.js"></script>
-    <script src="assets/scripts/app.js"></script> -->
-    <!-- if we add scripts in the end of body:takes long time we need to download them earlier but execute after -->
   </body>
 </html>
